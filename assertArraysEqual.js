@@ -9,7 +9,7 @@ const assertArraysEqual = function(actual, expected) {
 
 const eqArrays = function(array1, array2) {
   let condition = true;
-  if(array1.length !== array2.length || !(Array.isArray(array1)) || !(Array.isArray(array1))) {
+  if(array1.length !== array2.length || !(Array.isArray(array1)) || !(Array.isArray(array2))) {
     condition = false;
   } else {
     for (let i = 0; i < array1.length; i++) {
