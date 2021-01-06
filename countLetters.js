@@ -24,5 +24,5 @@ const countLetters = function(str) {
 };
 
 const isLetter = function(str) {
-  return str.match(/[a-z]/i);
+  return str.length === 1 && str.match(/[a-z]/i);
 };
