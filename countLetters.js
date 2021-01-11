@@ -1,12 +1,3 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 const countLetters = function(str) {
   const output = {};
   for (let c of str) {
@@ -26,3 +17,5 @@ const countLetters = function(str) {
 const isLetter = function(str) {
   return str.length === 1 && str.match(/[a-z]/i);
 };
+
+module.exports = countLetters;
